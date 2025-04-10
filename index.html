@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -7,41 +6,48 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
+  <div class="caixa-titulo">
     <h1>Feliz Aniversário, Mãe! Te amo! 🎉</h1>
-    <img src="foto.jpg" alt="Foto com a Maria" class="foto">
-    <p>Hoje é o seu dia, e eu só queria te lembrar o quanto você é incrível. Obrigado por tudo! 💖</p>
-    <p>Feliz Aniversário, mãe! 🌷
-
-      Hoje é o seu dia, mas eu celebro você todos os dias.
-      Você é força disfarçada de doçura, é calma em meio ao caos, é abraço que cura e sorriso que ilumina.
-      
-      Sua presença transforma a casa em lar, suas palavras confortam, sua risada aquece o coração.
-      Não há no mundo gratidão suficiente que possa expressar tudo o que você representa pra mim.
-      
-      Obrigado por cada gesto, cada cuidado, cada sacrifício feito em silêncio — e, principalmente, por me ensinar o que é o amor verdadeiro.
-      
-      Que seu novo ciclo seja leve, bonito e cheio de bênçãos, assim como você.
-      Você merece o mundo, e o mínimo que posso fazer hoje é te lembrar:
-      você é maravilhosa e profundamente amada.
-      
-      Te amo, mãe. </p>
   </div>
 
-  <button class="botao-musica" onclick="tocarMusica()">🎵 Tocar Música</button>
-</div>
+  <div class="botao-container">
+    <button class="botao-musica" onclick="tocarMusica()">🎵 Tocar Música</button>
+  </div>
 
-<audio id="musica" loop>
-  <source src="musica.mp3" type="audio/mpeg">
-</audio>
+  <div class="imagem-container">
+    <img src="foto.jpg" alt="Foto com a Maria" class="foto">
+  </div>
 
-<script src="confete.js"></script>
-<script src="baloes.js"></script>
-<script>
-  function tocarMusica() {
-    const musica = document.getElementById("musica");
-    musica.play();
-  }
-</script>
+  <div class="caixa-texto">
+    <p>Hoje é o seu dia, e eu só queria te lembrar o quanto você é incrível. Obrigado por tudo! 💖</p>
+    <p>Feliz Aniversário, mãe! 🌷</p>
+
+    <p>Hoje é o seu dia, mas eu celebro você todos os dias.
+    Você é força disfarçada de doçura, é calma em meio ao caos, é abraço que cura e sorriso que ilumina.</p>
+    
+    <p>Sua presença transforma a casa em lar, suas palavras confortam, sua risada aquece o coração.
+    Não há no mundo gratidão suficiente que possa expressar tudo o que você representa pra mim.</p>
+    
+    <p>Obrigado por cada gesto, cada cuidado, cada sacrifício feito em silêncio — e, principalmente, por me ensinar o que é o amor verdadeiro.</p>
+    
+    <p>Que seu novo ciclo seja leve, bonito e cheio de bênçãos, assim como você.</p>
+    <p>Você merece o mundo, e o mínimo que posso fazer hoje é te lembrar:</p>
+    <p>você é maravilhosa e profundamente amada.</p>
+    
+    <p>Te amo, mãe. </p>
+  </div>
+
+  <audio id="musica" loop>
+    <source src="musica.mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="confete.js"></script>
+  <script src="baloes.js"></script>
+  <script>
+    function tocarMusica() {
+      const musica = document.getElementById("musica");
+      musica.play();
+    }
+  </script>
 </body>
 </html>

@@ -2,36 +2,28 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
-  text-align: center;
   background: radial-gradient(circle at top left, #fff0f5, #ffe4e1);
   animation: glitter 10s infinite alternate;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
-@keyframes glitter {
-  0% { background-position: 0% 0%; }
-  100% { background-position: 100% 100%; }
-}
-
-.container {
-  max-width: 800px;
-  margin: 30px auto;
+.caixa-titulo {
+  background: white;
+  margin: 30px auto 10px;
   padding: 20px;
-  background: rgba(255, 255, 255, 0.9);
-  border-radius: 15px;
+  border-radius: 20px;
+  max-width: 700px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
-.foto {
-  width: 70%;
-  max-width: 600px;
-  border-radius: 15px;
-  margin: 20px 0;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+.botao-container {
+  text-align: center;
+  margin: 10px;
 }
 
 .botao-musica {
-  padding: 10px 20px;
+  padding: 12px 24px;
   font-size: 18px;
   border: none;
   background: #ff69b4;
@@ -47,6 +39,51 @@ body {
   background: #ff85c1;
 }
 
+.imagem-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.foto {
+  width: 90%;
+  max-width: 600px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.caixa-texto {
+  background: white;
+  margin: 20px auto 40px;
+  padding: 25px;
+  border-radius: 20px;
+  max-width: 700px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
+}
+
+@keyframes glitter {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
+@media (max-width: 600px) {
+  .caixa-texto, .caixa-titulo {
+    margin: 15px 10px;
+    padding: 15px;
+    font-size: 16px;
+  }
+
+  .botao-musica {
+    width: 90%;
+    font-size: 16px;
+  }
+
+  .foto {
+    width: 95%;
+  }
+}
 .balao {
   position: absolute;
   bottom: -50px;
@@ -65,4 +102,3 @@ body {
     opacity: 0;
   }
 }
-
