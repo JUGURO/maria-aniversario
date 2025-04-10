@@ -28,8 +28,20 @@
       Te amo, mãe. </p>
   </div>
 
-  <audio controls>
-    <source src="Evento.mp3" type="audio/mp3">
-  </audio>
+  <button class="botao-musica" onclick="tocarMusica()">🎵 Tocar Música</button>
+</div>
+
+<audio id="musica" loop>
+  <source src="musica.mp3" type="audio/mpeg">
+</audio>
+
+<script src="confete.js"></script>
+<script src="baloes.js"></script>
+<script>
+  function tocarMusica() {
+    const musica = document.getElementById("musica");
+    musica.play();
+  }
+</script>
 </body>
 </html>
